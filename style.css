@@ -10,7 +10,7 @@
 .rightPart{
     height: 100%;
     width: 50%;
-    position:center;
+    position:fixed;
     top: 0;
   right: 0;
     background-color: rgb(78, 167, 100);
@@ -24,7 +24,7 @@
 
 .right{
     right: 0;
-    text-align:center;
+    text-align:--center;
 }
 
 .centered{
