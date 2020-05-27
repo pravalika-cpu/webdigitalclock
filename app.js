@@ -4,7 +4,7 @@ var day=date.getDay()
 var today=daysInWeek[day]
 var hours=date.getHours();
 var minutes=date.getMinutes();
-document.getElementById("dateAndTime").innerText=`${today} ${hours}:${minutes}`;
+document.getElementById("dateAndTime").innerText=`${day} ${today} ${hours}:${minutes}`;
 var WeatherInCities=[   
 {city:"hyderabad,telangana",climaticCondition:"sunny",temperature:45},
 {city:"Bhopal,madhayapradesh",climaticcondition:"sunny",temperature:48},
