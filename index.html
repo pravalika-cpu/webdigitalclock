@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title>weatherApp</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div>
-        <h1>weatherapp</h1>
+    <div class="leftPart">
+        <h1 class="app title">WeatherApp</h1>
     </div>
+    <div class="right part">
         <div class="centered">
-            <h1 id="city">please select the city</h1>
-            <p id="dateAndTime" >date</p>
-            <h1 id="climate">climatic conditions</h1>
-            <h2 id="temp">temprature</h2>
-            <button>celusis</button>
-            <button>fahrenheit</button>
-             <select id="list">
-    
-                <option value="hyderabad,telangana">hyderabad,telangana</option>
-                <option value="bhopal,madhayapradesh">bhopal,madhyapradesh</option>
-                <option value="imphal,manipur">imphal,manipur</option>
-                <option value="agaratala,tripura">agaratala,tripura</option>
-                <option value="kohima,nagaland">kohima,nagaland</option>
-
-            </select>
-            <input type="button" value="submit">
-        
-
-        </div>
-        <script src="app.js"></script>
+        <p id="dateAndTime">Date</p>
+        <h1 id="climate">Climatic Condition</h1>
+        <h2 id="temp">temperature:</h2>
+        <button class="cel" onclick="getCelsius()">&#8451</button>
+        <button class="fah" onclick="getFahrenheit()">&#8457</button>
+        <h1 id="city">select the city</h1>
+        <p><select id="list">
+        <option value="Hyderabad,Telangana">Hyderabad,Telangana</option> 
+        <option value="Bhopal,Madhyapradesh">Bhopal,Madhyapradesh</option> 
+        <option value="imphal,manipur">imphal,manipur</option>
+        <option value="Agartala,Tripura">Agartala,Tripura</option>
+        <option value="Kohima,Nagaland">Kohima,Nagaland</option>
+    </select></p>
+   <p><input type="button" value="submit" onclick="getWeather()"></p>
+</div>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
