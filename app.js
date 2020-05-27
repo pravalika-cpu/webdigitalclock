@@ -1,18 +1,19 @@
-var date=new Date();
-var daysInWeek=["sunday","monday","tuesday","wednesday","thursday","friday","saturay"]
-var day=date.getDay()
-var today=daysInWeek[day]
-var hours=date.getHours();
-var minutes=date.getMinutes();
-document.getElementById("dateAndTime").innerText=`${day} ${today} ${hours}:${minutes}`;
-var WeatherInCities=[   
-{city:"hyderabad,telangana",climaticCondition:"sunny",temperature:45},
-{city:"Bhopal,madhayapradesh",climaticcondition:"sunny",temperature:40},
-{city:"Imphal,manipur",climaticCondtion:"cloudy",temperature:15},
-{city:"kohima,nagaland",climaticCondition:"humid",temperature:22}
-{city:"agarthala,tripura",climaticCondtion:"humid",temperature:20}
-]
+var date = new Date();
+var daysInWeek=["sunday","monday","tuesday","wednesday","<b>Thursday","<b>Friday","saturday"]
+var day=date.getDay();
+var today = daysInWeek[day];
+var hours =date.getHours();
+var min =date.getMinutes();
 
+document.getElementById("dateAndTime").innerText=(today+" "+hours+" "+min);
+
+var weatherInCities = [
+    {city: "Hyderabad,Telangana",climateCondition:"sunny", temperature:45},
+    {city: "Bhopal,Madhyapradesh",climateCondition:"sunny", temperature:40},
+    {city: "Imphal,Manipur",climateCondition:"cloudy", temperature:15},
+    {city: "Kohima,Nagaland",climateCondition:"rainy", temperature:22},
+    {city: "Agarthala,Tripura",climateCondition:"humid", temperature:20}
+]
 
 function getWeather(){
     var list=document.getElementById("list")
