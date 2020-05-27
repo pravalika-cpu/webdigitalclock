@@ -7,3 +7,5 @@ var minutes=date.getMinutes();
 document.getElementById("dateAndTime").innerText=`${today} ${hours}:${minutes}`;
 
 
+
+
