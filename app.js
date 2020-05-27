@@ -4,6 +4,6 @@ var day=date.getDay()
 var today=daysInWeek[day]
 var hours=date.getHours();
 var minutes=date.getMinutes();
-document.getElementById("dateAndTime").innerText='${today} ${hours};${minutes}'
+document.getElementById("dateAndTime").innerText=${today} ${hours};${minutes}
 
 
